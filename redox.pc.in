@@ -4,7 +4,7 @@ libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
 includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
 
 Name: @PROJECT_NAME@
-Description: Brad was here
+Description: Modern, asynchronous, and wicked fast C++11 client for Redis
 Version: @PROJECT_VERSION@
 
 Requires:

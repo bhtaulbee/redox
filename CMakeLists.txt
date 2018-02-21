@@ -207,6 +207,10 @@ install(FILES ${INC_REDOX_UTILS} DESTINATION include/redox/utils)
 # Install the top-level header directly into /usr/include
 install(FILES ${INC_REDOX_WRAPPER} DESTINATION include)
 
+# Install package config file
+configure_file(${PROJECT_NAME}.pc.in ${PROJECT_NAME}.pc @ONLY)
+install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.pc DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)
+
 # ---------------------------------------------------------
 # Create system package (make package)
 # ---------------------------------------------------------
